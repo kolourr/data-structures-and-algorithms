@@ -5,15 +5,15 @@
 // Time - O(n log n)/Space - O(1)
 
 
-// function areThereDuplicates(...arr){
-//   if(arr.length ==0) return false
-//   let obj = {}
+function areThereDuplicates(...arr){
+  if(arr.length ==0) return false
+  let obj = {}
 
-//   for(let char of arr){
-//     obj[char] ? obj[char] += 1 : obj[char] = 1
-//   }
-//   return Object.values(obj).some(item => item > 1)
-// }
+  for(let char of arr){
+    obj[char] ? obj[char] += 1 : obj[char] = 1
+  }
+  return Object.values(obj).some(item => item > 1)
+}
 
 
 function areThereDuplicates(...arr){

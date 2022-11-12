@@ -13,8 +13,8 @@ function findAllDuplicates(arr){
   let newArr = []
 
   for(let key in obj){
-    if(obj[key] > 1){
-      newArr.push(key)
+    if(obj[key] == 2){
+      newArr.push(Number(key))
     }
   }
   return newArr

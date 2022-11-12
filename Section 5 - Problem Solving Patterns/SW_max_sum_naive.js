@@ -5,8 +5,6 @@
 // The better solution is to use a sliding window where you are subtracting one number from the left side and then adding one to the other side
 // With this solution you will only go over the array once
 
-
-
 function maxSubarraySum(arr, num) {
   if ( num > arr.length){
     return null;

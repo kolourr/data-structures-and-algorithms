@@ -1,6 +1,5 @@
 // Write a function called same, which accepts two arrays. The function should return true if every value in the array has it's corresponding value squared in the second array. The frequency of values must be the same.
 
-
 //Optimal - Frequency Counter solution
 // Using an object and then a making a comparison
 // Break it down into objects and then compare the objects

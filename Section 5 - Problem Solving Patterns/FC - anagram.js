@@ -29,27 +29,3 @@ console.log(validAnagram('anagrams', 'anagrsma'))
 
 
 
-// function validAnagram(str1, str2){
-
-//     if(str1.length !== str2.length) return false
-
-//     let obj = {}
-
-//     for(let i=0; i<str1.length; i++){
-//       let val = str1[i]
-//       obj[val] ? obj[val] +=1 : obj[val] = 1
-//     }
-
-//     for(let i=0; i<str2.length; i++){
-//       let val = str2[i]
-//       if(!obj[val]){
-//         return false
-//       }
-//       else{
-//         obj[val] -= 1
-//       }
-//     }
-
-//     return true
-// }
-

@@ -6,16 +6,21 @@
 // Frequency Counter Problem
 //Time: O(N)
 function sameFrequency(num1, num2){
+
+  //convert integers to strings
   let str1 = num1.toString().split("")
   let str2 = num2.toString().split("")
 
   if(str1.length !== str2.length) return false
 
   let obj = {}
+
+  //get the count of one of the string
   for(let char of str1){
     obj[char] ? obj[char] += 1 : obj[char] = 1
   }
 
+  //compare the count of the 2nd one to the first one
   for(let char of str2){
     if(!obj[char]){
       return false

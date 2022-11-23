@@ -10,7 +10,7 @@ function maxSubarraySum(arr, num){
   let maxSum = arr.slice(0, num).reduce((a,b) => a + b, 0)
   let tempSum = maxSum
 
-  for(let i= num; i<arr.length; i++){n
+  for(let i= num; i<arr.length; i++){
      tempSum = tempSum - arr[i - num] + arr[i]
      maxSum = Math.max(tempSum, maxSum)
   }

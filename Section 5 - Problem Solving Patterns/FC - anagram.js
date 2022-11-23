@@ -7,15 +7,18 @@ function validAnagram(str1, str2){
   }
 
   let obj = {}
+  //get count of first string
   for(let val of str1){
     obj[val] ? obj[val] += 1 : obj[val] = 1
   }
 
+  //check values of second string for match
   for(let val of str2){
     if(!obj[val]){
       return false
     }
     else{
+      //delete one at a time
       obj[val] -= 1
     }
   }

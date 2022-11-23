@@ -31,5 +31,3 @@ console.log(areThereDuplicates('a', 'b', 'c', 'd')) // false
 
 
 
-
-
